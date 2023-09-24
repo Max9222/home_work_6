@@ -291,12 +291,14 @@
 
                         <form>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Имя"
+                                <input name="name" type="text" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Имя"
                                        aria-describedby="emailHelp">
                             </div>
 
                             <div class="mb-3">
-                                <input type="email" placeholder="Email" class="form-control" id="exampleInputPassword1">
+                                <input name="email" type="email" placeholder="Email" class="form-control"
+                                       id="exampleInputPassword1">
                             </div>
                             <button type="submit" class="btn btn-primary">Отправить</button>
                         </form>
@@ -314,7 +316,8 @@
 
                             <p class="d-inline-flex gap-5">
                                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1"
-                                   role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Как купить?</a>
+                                   role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Как
+                                    купить?</a>
                                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#multiCollapseExample2" aria-expanded="false"
                                         aria-controls="multiCollapseExample2">Как доставить?
@@ -352,9 +355,91 @@
                     </div>
 
                 </div>
+                <div class="row text-center">
+                    <div class="col-all">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Номер</th>
+                                        <th scope="col">Название товара</th>
+                                        <th scope="col">Цена за штуку</th>
+                                        <th scope="col">Количество</th>
+                                        <th scope="col">Итоговая сумма</th>
+                                        <th scope="col">Статус заказа</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Банан</td>
+                                        <td>100</td>
+                                        <td>10</td>
+                                        <td>1000</td>
+                                        <td>
+                                            <div class="alert alert-primary" role="alert">
+                                                новый
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Картошка</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>1000</td>
+                                        <td>
+                                            <div class="alert alert-primary" role="alert">
+                                                новый
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Киви</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>1000</td>
+                                        <td>
+                                            <div class="alert alert-warning" role="alert">
+                                                обработка
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Мята</td>
+                                        <td>100</td>
+                                        <td>100</td>
+                                        <td>10000</td>
+                                        <td>
+                                            <div class="alert alert-success" role="alert">
+                                                обработан
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Манго</td>
+                                        <td>250</td>
+                                        <td>10</td>
+                                        <td>2500</td>
+                                        <td>
+                                            <div class="alert alert-danger" role="alert">
+                                                отмена
+                                            </div>
 
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-
     </div>
 
 </main>
